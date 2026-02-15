@@ -105,7 +105,7 @@ The CNN architecture dynamically adapts based on the number of classes:
   - 1 MaxPool layer
   - Fully connected layer (32 hidden units)
 
-- > 10 classes:
+- greater than 10 classes:
   - 2 Convolution layers (8 → 16 channels)
   - 1 MaxPool layer
   - Fully connected layer (64 hidden units)
