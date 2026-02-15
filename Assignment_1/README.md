@@ -489,5 +489,27 @@ The model is trained on the given two datasets(MNIST and CIFAR100) and the train
   my_framework/outputs/data_2/weights/model_weights_data2.json
   ```
 
+## Sources Used
 
+The following resources were referred for this assignment:
 
+1. **Official Documentation**
+
+   * Python Documentation: [https://docs.python.org/3/](https://docs.python.org/3/)
+   * C++ Reference: [https://en.cppreference.com/](https://en.cppreference.com/)
+   * pybind11 Documentation: [https://pybind11.readthedocs.io/](https://pybind11.readthedocs.io/)
+   * CMake Documentation: [https://cmake.org/documentation/](https://cmake.org/documentation/)
+   * OpenCV Documentation: [https://docs.opencv.org/](https://docs.opencv.org/)
+
+2. **General Programming References**
+
+   * Stack Overflow (for debugging build and environment issues)
+   * Git documentation (for repository management)
+
+3. **Academic Knowledge**
+
+   * Lecture slides and course materials provided in GNR 638, IIT Bombay
+
+4. **AI Assistance**
+
+   * ChatGPT (OpenAI) — used for debugging support, conceptual clarification, and documentation refinement.
