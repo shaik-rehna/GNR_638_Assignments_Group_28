@@ -98,17 +98,9 @@ my_framework/
 
 ## Model Architecture
 
-The CNN architecture dynamically adapts based on the number of classes:
-
-- ≤ 10 classes:
-  - 2 Convolution layers (4 → 8 channels)
+  - 2 Convolution layers (input_channels → 4 → 8 channels)
   - 1 MaxPool layer
-  - Fully connected layer (32 hidden units)
-
-- greater than 10 classes:
-  - 2 Convolution layers (8 → 16 channels)
-  - 1 MaxPool layer
-  - Fully connected layer (64 hidden units)
+  - 2 Fully connected layer (flatten → 32 hidden units → num_classes)
 
 All inputs are resized to 32×32 and use valid convolutions
 (kernel = 3, stride = 1, no padding).
@@ -473,6 +465,35 @@ The model is trained on the given two datasets(MNIST and CIFAR100) and the train
   ```
   my_framework/outputs/data_2/weights/model_weights_data2.json
   ```
+
+---
+
+## Results 
+
+### Dataset 1 
+
+* Final Training Accuracy: 98.03%
+* Final Validation Accuracy: 96.42%
+* No of Epochs: 20
+* Total Parameters: 50,874
+* MACs per forward pass: 308,688
+* FLOPs per Forward Pass: 617,376
+* Total Training Time: ~1.55 hours
+
+### Dataset 2 
+
+* Final Training Accuracy: 9.12%
+* Final Validation Accuracy: 8.84%
+* No of Epochs: 15
+* Total Parameters: 53916
+* MACs per forward pass: 376368
+* FLOPs per Forward Pass: 752736
+* Total Training Time: ~2.78 hours
+
+Complete logs are available in the `outputs/` directory.
+
+
+---
 
 ## Sources Used
 
