@@ -231,21 +231,6 @@ pip install -r requirements.txt
 
 # 4. Build Backend (C++ Compilation) 
 
-The precompiled `build/` directory included in this project was generated on macOS.
-
-If running on a different operating system (e.g., Windows or Linux), or with a different Python version, the backend must be rebuilt.
-
-* Rebuilding is required only if:
-
-  * Backend source code is modified
-  
-  * Python version changes
-  
-  * Operating system changes (The existing `build/` directory was created on macOS)
-  
-  * Compiler/toolchain changes
-
-If none of the above apply, the existing `build/` directory can be used directly.
 
 Navigate to backend:
 
