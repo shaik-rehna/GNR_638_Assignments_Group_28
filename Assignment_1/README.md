@@ -127,7 +127,7 @@ No external deep learning libraries (PyTorch, TensorFlow, NumPy, etc.) are used.
 
 # Setup and Execution Instructions
 
-## 1. Clone the Repository
+# 1. Clone the Repository
 
 ```bash
 git clone https://github.com/shaik-rehna/GNR_638_Assignments_Group_28.git
