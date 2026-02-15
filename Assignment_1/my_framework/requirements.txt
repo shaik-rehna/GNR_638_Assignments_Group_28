@@ -1,0 +1,5 @@
+# C++ Binding Library
+pybind11==3.0.1
+
+# Image Loading Library
+opencv-python==4.13.0
