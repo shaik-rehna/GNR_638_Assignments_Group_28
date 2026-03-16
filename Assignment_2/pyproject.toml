@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnn-transfer"
+version = "0.1.0"
+description = "Pre-trained CNN Representation Transfer and Robustness Analysis"
+authors = [
+  {name = "Group 28"}
+]
+requires-python = ">=3.10"
+
+dependencies = [
+  "torch",
+  "torchvision",
+  "timm",
+  "ptflops",
+  "scikit-learn",
+  "umap-learn",
+  "tqdm",
+  "matplotlib"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
